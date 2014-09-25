@@ -71,7 +71,7 @@ void setEnvVar() {
 	//
 	do {
 		fscanf(profileFile, "%c", &word[a]);
-	} while (word[a] != ':');
+	} while (word[a] != '#');
 	do {
 		fscanf(profileFile, "%c", &word[a]);
 		message[b++] = word[a];
@@ -80,7 +80,7 @@ void setEnvVar() {
 	b = 0;
 	do {
 		fscanf(profileFile, "%c", &word[a]);
-	} while (word[a] != ':');
+	} while (word[a] != '#');
 	do {
 		fscanf(profileFile, "%c", &word[a]);
 		PROMPT[b++] = word[a];
@@ -89,7 +89,7 @@ void setEnvVar() {
 	b = 0;
 	do {
 		fscanf(profileFile, "%c", &word[a]);
-	} while (word[a] != ':');
+	} while (word[a] != '#');
 	do {
 		fscanf(proFile, "%c", &word[a]);
 		PATH[b++] = word[a];
@@ -98,7 +98,7 @@ void setEnvVar() {
 	b = 0;
 	do {
 		fscanf(profileFile, "%c", &word[a]);
-	} while (word[a] != ':');
+	} while (word[a] != '#');
 	do {
 		fscanf(profileFile, "%c", &word[a]);
 		HOME[b++] = word[a];
