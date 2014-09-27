@@ -21,17 +21,17 @@ char message[MAX_CHAR];
 char alias_for_cd[MAX_CHAR];
 int cd_has_alias = 0;
 
-//Structure for alias
+//Structure for alias 
 
-typedef struct {
+/* typedef struct {
 	char *akey;
 	char *val;
 } alias;
 
 int num_of_alias;
-alias **aliases;
+alias **aliases;  */
 
-jmp_buf (getinput); //Saving environment for setjmp and longjmp
+//jmp_buf (getinput); Saving environment for setjmp and longjmp
 
 // Setting home directory for new shell
 
